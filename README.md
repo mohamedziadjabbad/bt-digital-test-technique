@@ -7,7 +7,7 @@
 npm i
 npm run dev
 ```
-Vous trouverez les consignes sur la page d'accueil
+Vous trouverez les consignes sur la page d'accueil, l'accès à la documentation de Trilogy se trouve [ici](https://design.bouyguestelecom.fr/getting-started)
 
 ## Integration responsive
 Le but sera d’intégrer une page typique de notre périmètre, en utilisant Trilogy en React, tout en partant d’une maquette [Figma](https://www.figma.com/design/HkCMBbeZjWXqmlYdkcO59G/Test-integration?node-id=0-1&t=CNt4mofwjJhJ6W4b-1).
