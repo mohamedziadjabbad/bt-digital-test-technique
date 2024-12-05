@@ -98,13 +98,13 @@
       {
         "icons": ["tri-sim-card", "tri-users"],
         "title": "Découvrir nos forfaits Bouygues Telecom",
-        "desctiption": "Bénéficiez d’un réseau mobile de qualité, d’avantages et de services exclusifs et d'un nouveau smartphone.",
+        "description": "Bénéficiez d’un réseau mobile de qualité, d’avantages et de services exclusifs et d'un nouveau smartphone.",
         "cta": "En profiter"
       },
       {
         "icons": ["tri-sim-card"],
         "title": "Découvrir nos forfaits B&YOU sans engagement",
-        "desctiption": "Profitez de la qualité de notre réseau avec nos forfaits B&YOU sans engagement.",
+        "description": "Profitez de la qualité de notre réseau avec nos forfaits B&YOU sans engagement.",
         "cta": "En profiter"
       }
     ]

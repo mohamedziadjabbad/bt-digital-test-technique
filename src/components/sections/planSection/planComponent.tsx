@@ -6,37 +6,43 @@ import {
   IconName,
   BoxProps,
   BoxFooter,
+  IconColor,
+  Button,
+  Icon,
 } from "@trilogy-ds/react";
 import React from "react";
 
-type RepairComponentProps = {
+type PlanComponentProps = {
   item: {
-    icon: string;
+    icons: IconName[];
     title: string;
-    body: string;
-    notion?: string;
+    description: string;
+    cta: string;
   };
 };
 
-export default function RepairComponent({
+export default function PlanComponent({
   item,
   ...props
-}: RepairComponentProps & BoxProps) {
-  const iconName = item.icon as IconName;
-
+}: PlanComponentProps & BoxProps) {
   return (
     <Box {...props}>
       <BoxContent>
-        {/* <Icon color={iconColor} size="large" name={iconName} /> */}
+        {item.icons.map((element, index) => (
+          <Icon
+            key={`icon-${index}`}
+            color={IconColor.MAIN}
+            size="large"
+            name={element}
+          />
+        ))}
         <Title typo={["has-text-centered"]} level={3}>
           {item.title}
         </Title>
-        <Text typo={["has-text-centered"]}>{item.body}</Text>
+        <Text typo={["has-text-centered"]}>{item.description}</Text>
       </BoxContent>
       <BoxFooter>
-        <Text typo={"has-text-centered"} level={3}>
-          {item?.notion}
-        </Text>
+        <Button variant="CONVERSION">{item?.cta}</Button>
       </BoxFooter>
     </Box>
   );

@@ -1,5 +1,6 @@
 import { useData } from "@/data/data";
 import {
+  Column,
   Columns,
   Container,
   GapSize,
@@ -9,6 +10,7 @@ import {
   Title,
 } from "@trilogy-ds/react";
 import React from "react";
+import PlanComponent from "./planComponent";
 
 export default function PlanSection() {
   const { plansSection } = useData();
@@ -20,7 +22,17 @@ export default function PlanSection() {
             {plansSection.headingtitle}
           </Title>
           <Row>
-            <Columns></Columns>
+            <Columns align="ALIGNED_CENTER" marginless>
+              {plansSection.children.map((element, index) => (
+                <Column size={4}>
+                  <PlanComponent
+                    fullheight
+                    key={`plan-${index}`}
+                    item={element}
+                  />
+                </Column>
+              ))}
+            </Columns>
           </Row>
         </Rows>
       </Container>
