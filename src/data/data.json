@@ -201,7 +201,7 @@
   },
   "repairPhoneSection": {
     "header": {
-      "iconImg": "/img/solutionSmartphoneDurableIcon.webp",
+      "iconImg": "/img/solutionSmartphoneDurable.webp",
       "title": "Réparer son téléphone, c'est aussi un gestepour l’environnement"
     },
     "subHeading": "Prolonger la durée de vie d’un an d’un téléphone permettrait de réduire son empreinte carbone de 30% environ*",
@@ -246,10 +246,10 @@
   },
   "lifeSpanSection": {
     "headingTitle": "Ensemble, faisons durer nos smartphones plus longtemps",
-    "img": "",
+    "img": "/img/bouyguesLifeSpan.webp",
     "body": {
       "title": "Nos téléphones ont une place particulière dans notre quotidien, en nous accompagnant partout et tout le temps",
-      "desctiption": [
+      "description": [
         {
           "text": "Alors pour s’en séparer le plus tard possible, on lance les ",
           "weight": "light",
@@ -258,7 +258,7 @@
         {
           "text": "Solutions Smartphone Durable",
           "weight": "semibold",
-          "type": "p"
+          "type": "span"
         },
         {
           "text": " : 4 façons de prolonger la vie de nos mobiles tout en faisant un geste pour la planète.",
