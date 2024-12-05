@@ -36,12 +36,12 @@ export default function RepairPhoneSection() {
             alt="repair-icon"
           />
 
-          <Title level={3} typo={["has-text-white", "has-text-centered"]}>
+          <Title level={2} typo={["has-text-white", "has-text-centered"]}>
             {repairPhoneSection.header.title}
           </Title>
 
           {/* i didn't find the variant for the recommended color */}
-          <Title level={3} typo={["has-text-white", "has-text-centered"]}>
+          <Title level={4} typo={["has-text-white", "has-text-centered"]}>
             {repairPhoneSection.subHeading}
           </Title>
 
