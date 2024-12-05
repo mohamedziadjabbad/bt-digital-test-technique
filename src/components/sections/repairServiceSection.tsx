@@ -19,7 +19,7 @@ import {
 // hooks
 import { Data, useData } from "@/data/data";
 import { useMobile } from "@/hooks/useMobile";
-import RepairComponent from "../repairComponent";
+import CustomCard from "../customCard";
 
 export default function RepairServiceSection() {
   const { repairServiceSection } = useData();
@@ -75,7 +75,7 @@ const DesktopRepairServiceWrapper = ({
           align="ALIGNED_CENTER"
           desktopSize={3}
         >
-          <RepairComponent backgroundColor="MAIN" shadowless item={element} />
+          <CustomCard backgroundColor="MAIN" shadowless item={element} />
         </Column>
       ))}
     </Columns>

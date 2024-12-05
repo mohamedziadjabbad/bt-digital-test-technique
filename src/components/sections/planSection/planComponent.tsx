@@ -14,7 +14,7 @@ import React from "react";
 
 type PlanComponentProps = {
   item: {
-    icons: IconName[];
+    icons: string[];
     title: string;
     description: string;
     cta: string;
@@ -25,10 +25,12 @@ export default function PlanComponent({
   item,
   ...props
 }: PlanComponentProps & BoxProps) {
+  const icons = item.icons as IconName[];
+
   return (
     <Box {...props}>
       <BoxContent>
-        {item.icons.map((element, index) => (
+        {icons.map((element, index) => (
           <Icon
             key={`icon-${index}`}
             color={IconColor.MAIN}

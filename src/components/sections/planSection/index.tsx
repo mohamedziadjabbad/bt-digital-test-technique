@@ -22,14 +22,10 @@ export default function PlanSection() {
             {plansSection.headingtitle}
           </Title>
           <Row>
-            <Columns align="ALIGNED_CENTER" marginless>
+            <Columns align="ALIGNED_CENTER">
               {plansSection.children.map((element, index) => (
-                <Column size={4}>
-                  <PlanComponent
-                    fullheight
-                    key={`plan-${index}`}
-                    item={element}
-                  />
+                <Column key={`plan-${index}`} size={4}>
+                  <PlanComponent fullheight item={element} />
                 </Column>
               ))}
             </Columns>

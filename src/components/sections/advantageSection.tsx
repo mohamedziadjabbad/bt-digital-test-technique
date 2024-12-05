@@ -9,7 +9,7 @@ import {
   Title,
 } from "@trilogy-ds/react";
 import React from "react";
-import RepairComponent from "../repairComponent";
+import CustomCard from "../customCard";
 
 export default function AdvantageSection() {
   const { advantageSection } = useData();
@@ -24,7 +24,7 @@ export default function AdvantageSection() {
             <Columns marginless>
               {advantageSection.children.map((element, index) => (
                 <Column size={4} key={`advantage-${index}`}>
-                  <RepairComponent
+                  <CustomCard
                     iconColor="MAIN"
                     fullheight
                     shadowless={false}

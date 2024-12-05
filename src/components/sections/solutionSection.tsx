@@ -8,7 +8,7 @@ import {
   Title,
 } from "@trilogy-ds/react";
 import React from "react";
-import RepairComponent from "../repairComponent";
+import CustomCard from "../customCard";
 import { useMobile } from "@/hooks/useMobile";
 
 export default function SolutionSection() {
@@ -21,12 +21,12 @@ export default function SolutionSection() {
           <Title level={3} typo={["has-text-centered", "has-text-white"]}>
             {solutionsSection.headingTitle}
           </Title>
-          <Columns marginless>
+          <Columns>
             {solutionsSection.children.map((element, index) => (
               <Column key={`solution-${index}`} desktopSize={6} mobileSize={12}>
-                <RepairComponent
-                  hideParamsOnMobile={isMobile ? ["cta"] : []}
+                <CustomCard
                   fullheight
+                  hideParamsOnMobile={isMobile ? ["cta"] : []}
                   iconColor="MAIN"
                   textAlign={isMobile ? "center" : "left"}
                   isBackgroundWhite

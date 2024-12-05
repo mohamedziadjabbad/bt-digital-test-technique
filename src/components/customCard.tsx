@@ -14,7 +14,7 @@ import {
 import React from "react";
 import DynamicTextWrapper, { DynamicTextParams } from "./dynamicText";
 
-type RepairComponentProps = {
+type CustomCardProps = {
   item: {
     icon: string;
     title: string;
@@ -29,20 +29,21 @@ type RepairComponentProps = {
   hideParamsOnMobile?: string[];
 };
 
-export default function RepairComponent({
+export default function CustomCard({
   item,
   iconColor = IconColor.SUCCESS,
   isBackgroundWhite = false,
   textAlign = "center",
   hideParamsOnMobile,
   ...props
-}: RepairComponentProps & BoxProps) {
+}: CustomCardProps & BoxProps) {
   const iconName = item.icon as IconName;
 
   const hideUndesiredElements = (value: string | undefined) => {
     if (!value) {
       return;
     }
+
     if (
       hideParamsOnMobile &&
       hideParamsOnMobile.length !== 0 &&
@@ -50,6 +51,7 @@ export default function RepairComponent({
     ) {
       return false;
     }
+
     return true;
   };
 
@@ -86,16 +88,16 @@ export default function RepairComponent({
             <DynamicTextWrapper data={item?.description} />
           </Text>
         )}
+        {item?.notion && hideUndesiredElements("notion") ? (
+          <Text typo={"has-text-centered"} level={3}>
+            {item?.notion}
+          </Text>
+        ) : null}
+        {/* can't add color to the link tag */}
+        {item?.cta && hideUndesiredElements("cta") ? (
+          <Link blank>{item?.cta}</Link>
+        ) : null}
       </BoxContent>
-      {item?.notion && hideUndesiredElements("notion") ? (
-        <Text typo={"has-text-centered"} level={3}>
-          {item?.notion}
-        </Text>
-      ) : null}
-      {/* can't add color to the link tag */}
-      {item?.cta && hideUndesiredElements("cta") ? (
-        <Link blank>{item?.cta}</Link>
-      ) : null}
     </Box>
   );
 }

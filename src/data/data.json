@@ -183,18 +183,18 @@
     ]
   },
   "insuranceSection": {
-    "headingTitle": "L’assurance, la fo)))rmule tout confort pour votre mobile",
-    "img": "",
+    "headingTitle": "L’assurance, la formule tout confort pour votre mobile",
+    "img": "/img/insuranceImg.webp",
     "children": [
       {
         "icon": "tri-sun-euro",
         "title": "Aucune dépense",
-        "desctiption": "à débourser en cas d’incident"
+        "body": "à débourser en cas d’incident"
       },
       {
         "icon": "tri-hand-mobile",
         "title": "Téléphone assuré",
-        "desctiption": "en cas de vol, dommages ou oxydation"
+        "body": "en cas de vol, dommages ou oxydation"
       }
     ],
     "cta": "L’assurance en détail"
