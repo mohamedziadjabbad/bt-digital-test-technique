@@ -1,0 +1,336 @@
+{
+  "heroSection": {
+    "img": "/img/heroImage.webp",
+    "title": "Réparation de votre téléphone",
+    "description": "Un smartphone cassé ou en panne, ça arrive à tout le monde.",
+    "subDesctiption": [
+      {
+        "text": "Heureusement, que vous soyez sous garantie ou non, on a des ",
+        "weight": "light",
+        "type": "p"
+      },
+      {
+        "text": "solutions de réparation ",
+        "weight": "semibold",
+        "type": "span"
+      },
+      {
+        "text": "pour vous !",
+        "weight": "light",
+        "type": "p"
+      }
+    ]
+  },
+  "tabSection": [
+    { "label": "WeFix", "isActive": true },
+    { "label": "Réparation express en boutique", "isActive": false },
+    { "label": "Avantages client", "isActive": false },
+    { "label": "Forfaits", "isActive": false },
+    { "label": "L’assurance", "isActive": false },
+    { "label": "Une question ?", "isActive": false }
+  ],
+  "partnerSection": {
+    "headingTitle": "Le choix d’un partenaire expert pour votre téléphone",
+    "img": "/img/partnerImg.webp",
+    "title": "WeFix, filiale de Fnac Darty, est le leader français de la réparation de smartphones",
+    "description": "Quelle que soit la réparation, WeFix a la solution : écran, batterie, WiFi, haut-parleur, écouteurs, appareil photo, connecteur de charge, avec des pièces compatibles.",
+    "cta": "Visiter WeFix"
+  },
+  "repairServiceSection": {
+    "header": {
+      "iconImg": "/img/pictoIcon.webp",
+      "title": "Bénéficiez du service de réparation express en boutique*",
+      "cta": "Trouver ma boutique"
+    },
+    "benfits": {
+      "title": "Avec Bouygues Telecom, la réparation c’est…",
+      "children": [
+        {
+          "icon": "tri-users",
+          "title": "Ouvert à tous",
+          "body": "Que vous soyez client Bouygues Telecom ou non !"
+        },
+        {
+          "icon": "tri-france",
+          "title": "Partout en France",
+          "body": "Le service est accessible dans toutes nos boutiques"
+        },
+        {
+          "icon": "tri-calendar",
+          "title": "Express",
+          "body": "Entre 1 et 5 jours, et pour près d’un client sur 2, la réparation est réalisée en 24h !"
+        },
+        {
+          "icon": "tri-mobile-tools",
+          "title": "Garantie de qualité",
+          "body": "Réparation réalisée par notre partenaire WiFix et garantie 1 an (i)"
+        }
+      ]
+    },
+    "notion": "* Retrouvez les conditions et informations détaillées du service de réparation dans la FAQ accessible en bas de page. Kit-mains libre recommandé."
+  },
+  "advantageSection": {
+    "headerTitle": "Et encore plus d’avantages si vous êtes client Bouygues Telecom !",
+    "children": [
+      {
+        "icon": "tri-sun-euro",
+        "title": "-30% de remise* valables sur toutes les réparations",
+        "body": "et -20% de remise sur les autres réparations effectuées lors de la même prise en charge",
+        "notion": "*2 fois par an !"
+      },
+      {
+        "icon": "tri-mobile",
+        "title": "On vous prête un smartphone",
+        "body": "le temps de la réparation (i)",
+        "notion": ""
+      },
+      {
+        "icon": "tri-users",
+        "title": "Faites profiter de la remise de 30% à un proche,",
+        "body": "que le téléphone ait été acheté chez Bouygues Telecom ou ailleurs !",
+        "notion": ""
+      }
+    ]
+  },
+  "plansSection": {
+    "headingtitle": "Nos forfaits, pour vous",
+    "children": [
+      {
+        "icons": ["tri-sim-card", "tri-users"],
+        "title": "Découvrir nos forfaits Bouygues Telecom",
+        "desctiption": "Bénéficiez d’un réseau mobile de qualité, d’avantages et de services exclusifs et d'un nouveau smartphone.",
+        "cta": "En profiter"
+      },
+      {
+        "icons": ["tri-sim-card"],
+        "title": "Découvrir nos forfaits B&YOU sans engagement",
+        "desctiption": "Profitez de la qualité de notre réseau avec nos forfaits B&YOU sans engagement.",
+        "cta": "En profiter"
+      }
+    ]
+  },
+  "solutionsSection": {
+    "headingTitle": "Quel que soit le problème, nous avons la solution",
+    "children": [
+      {
+        "icon": "tri-mobile-broken",
+        "title": "Mon téléphone n’est plus sous garantie",
+        "description": [
+          {
+            "text": "Si le téléphone que nous vous avons vendu n’est plus garanti et n’est pas assuré ou si vous n’avez pas acheté votre téléphone chez nous, vous pouvez bénéficier d’une ",
+            "weight": "light",
+            "type": "p"
+          },
+          {
+            "text": "réparation en boutique",
+            "weight": "semibold",
+            "type": "span"
+          },
+          {
+            "text": ", et ",
+            "weight": "light",
+            "type": "p"
+          },
+          {
+            "text": "à prix réduit ",
+            "weight": "semibold",
+            "type": "span"
+          },
+          {
+            "text": "si vous détenez un forfait Bouygues Telecom.",
+            "weight": "light",
+            "type": "p"
+          }
+        ],
+        "cta": "Trouver ma boutique"
+      },
+      {
+        "icon": "tri-hand-mobile",
+        "title": "Mon téléphone est sous garantie",
+        "description": [
+          {
+            "text": "Tous nos téléphones",
+            "weight": "light",
+            "type": "a"
+          },
+          {
+            "text": " sont ",
+            "weight": "light",
+            "type": "p"
+          },
+          {
+            "text": "garantis 2 ans. ",
+            "weight": "semibold",
+            "type": "span"
+          },
+          {
+            "text": "Si vos téléphone tombe en panne pendant ce délais et qu’il s’agit d’un défaut couvert par les garanties légales (par exemple, un défaut de fabrication),",
+            "weight": "light",
+            "type": "p"
+          },
+          {
+            "text": " sa réparation est prise en charge gratuitement ",
+            "weight": "light",
+            "type": "p"
+          },
+          {
+            "text": "par Bouygues Telecom.",
+            "weight": "light",
+            "type": "p"
+          }
+        ]
+      }
+    ]
+  },
+  "insuranceSection": {
+    "headingTitle": "L’assurance, la fo)))rmule tout confort pour votre mobile",
+    "img": "",
+    "children": [
+      {
+        "icon": "tri-sun-euro",
+        "title": "Aucune dépense",
+        "desctiption": "à débourser en cas d’incident"
+      },
+      {
+        "icon": "tri-hand-mobile",
+        "title": "Téléphone assuré",
+        "desctiption": "en cas de vol, dommages ou oxydation"
+      }
+    ],
+    "cta": "L’assurance en détail"
+  },
+  "repairPhoneSection": {
+    "header": {
+      "iconImg": "",
+      "title": "Réparer son téléphone, c'est aussi un gestepour l’environnement"
+    },
+    "subHeading": "Prolonger la durée de vie d’un an d’un téléphone permettrait de réduire son empreinte carbone de 30% environ*",
+    "moreInfo": {
+      "title": "Comment ?",
+      "children": [
+        {
+          "icon": "tri-mobile-up-down",
+          "title": "Environnement",
+          "desctiption": [
+            {
+              "text": "En évitant la production d’un nouveau mobile et ses conséquences sur l’environnement.",
+              "weight": "light",
+              "type": "p"
+            }
+          ]
+        },
+        {
+          "icon": "tri-recycle",
+          "title": "Recyclage",
+          "desctiption": [
+            {
+              "text": "En permettant le ",
+              "weight": "light",
+              "type": "p"
+            },
+            {
+              "text": "recyclage ",
+              "weight": "light",
+              "type": "a"
+            },
+            {
+              "text": "des pièces changées suite à la réparation de votre téléphone.",
+              "weight": "light",
+              "type": "p"
+            }
+          ]
+        }
+      ],
+      "notion": "*Source : Green Alliance"
+    }
+  },
+  "lifeSpanSection": {
+    "headingTitle": "Ensemble, faisons durer nos smartphones plus longtemps",
+    "img": "",
+    "body": {
+      "title": "Nos téléphones ont une place particulière dans notre quotidien, en nous accompagnant partout et tout le temps",
+      "desctiption": [
+        {
+          "text": "Alors pour s’en séparer le plus tard possible, on lance les ",
+          "weight": "light",
+          "type": "p"
+        },
+        {
+          "text": "Solutions Smartphone Durable",
+          "weight": "semibold",
+          "type": "p"
+        },
+        {
+          "text": " : 4 façons de prolonger la vie de nos mobiles tout en faisant un geste pour la planète.",
+          "weight": "light",
+          "type": "p"
+        }
+      ],
+      "cta": "Découvrir nos solutions"
+    }
+  },
+  "faq": {
+    "headingTitle": "Toutes vos questions sur la réparation de téléphone",
+    "accordianChildren": [
+      {
+        "title": "Comment faire réparer son téléphone chez Bouygues Telecom ?",
+        "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta amet nesciunt voluptas repudiandae,"
+      },
+      {
+        "title": "Quels types de réparations propose le service ?",
+        "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta amet nesciunt voluptas repudiandae,"
+      },
+      {
+        "title": "Combien de temps prendra la réparation de mon téléphone ?",
+        "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta amet nesciunt voluptas repudiandae,"
+      },
+      {
+        "title": "La réparation est-elle garantie ?",
+        "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta amet nesciunt voluptas repudiandae,"
+      },
+      {
+        "title": "Quels sont mes avantages si je fais réparer mon téléphone chez Bouygues Telecom ?",
+        "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta amet nesciunt voluptas repudiandae,"
+      },
+      {
+        "title": "Quelles marques de téléphones sont réparables ?",
+        "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta amet nesciunt voluptas repudiandae,"
+      },
+      {
+        "title": "Comment faire réparer mon téléphone tout en préservant la garantie ?",
+        "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta amet nesciunt voluptas repudiandae,"
+      }
+    ]
+  },
+  "tipsSection": {
+    "headingTitle": "Nos astuces pour prendre soin de votre mobile",
+    "children": [
+      {
+        "img": "",
+        "title": "Comment prolonger la vie de son smartphone ?",
+        "cta": "Visiter WeFix"
+      },
+      {
+        "img": "",
+        "title": "Comment protéger son smartphone de l’oxydation ?",
+        "cta": "Visiter WeFix"
+      },
+      {
+        "img": "",
+        "title": "Les conseils à suivre avant d’envoyer votre téléphone en réparation",
+        "cta": "Visiter WeFix"
+      }
+    ]
+  },
+  "lastSection": {
+    "breadCrumbs": [
+      { "text": "Acceuil", "isActive": false },
+      { "text": "Choisir Bouygues Telecom", "isActive": false },
+      { "text": "Recyclage", "isActive": true }
+    ],
+    "accordian": {
+      "title": "Mentions légales",
+      "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta amet nesciunt voluptas repudiandae,"
+    }
+  }
+}
