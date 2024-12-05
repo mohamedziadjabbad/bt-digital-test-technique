@@ -20,6 +20,7 @@ import {
 import { Data, useData } from "@/data/data";
 import { useMobile } from "@/hooks/useMobile";
 import CustomCard from "../customCard";
+import OutlinedBox from "../outlinedBox";
 
 export default function RepairServiceSection() {
   const { repairServiceSection } = useData();
@@ -27,31 +28,34 @@ export default function RepairServiceSection() {
   return (
     <Section backgroundColor="MAIN">
       <Container>
-        <Rows gap={GapSize.THREE}>
-          <Row>
-            {/* i didn't find this icon in trilogy icons */}
-            <Image
-              align="ALIGNED_CENTER"
-              src={repairServiceSection.header.iconImg}
-              alt="repair-icon"
-            />
+        <Rows gap={GapSize.SEVEN}>
+          {/* i didn't find this icon in trilogy icons */}
+          <Image
+            align="ALIGNED_CENTER"
+            src={repairServiceSection.header.iconImg}
+            alt="repair-icon"
+          />
 
-            <Title level={3} typo={["has-text-white", "has-text-centered"]}>
-              {repairServiceSection.header.title}
-            </Title>
+          <Title level={3} typo={["has-text-white", "has-text-centered"]}>
+            {repairServiceSection.header.title}
+          </Title>
 
-            {/* i didn't find the variant for the recommended color */}
-            <Button type="button" variant={ButtonVariant.SECONDARY}>
-              {repairServiceSection.header.cta}
-            </Button>
-          </Row>
-          <Row>
-            {!isMobile && (
-              <DesktopRepairServiceWrapper
-                data={repairServiceSection.benfits}
-              />
-            )}
-          </Row>
+          {/* i didn't find the variant for the recommended color */}
+          <Button type="button" variant={ButtonVariant.SECONDARY}>
+            {repairServiceSection.header.cta}
+          </Button>
+
+          {/* i didn't find similar component for this item in trilogy design system */}
+          <OutlinedBox
+            title={repairServiceSection.benfits.title}
+            titleProps={{
+              level: 1,
+              typo: ["has-text-white", "has-text-centered"],
+              overline: true,
+            }}
+          >
+            <DesktopRepairServiceWrapper data={repairServiceSection.benfits} />
+          </OutlinedBox>
 
           <Text typo={["has-text-white", "has-text-centered"]} level={4}>
             {repairServiceSection.notion}
