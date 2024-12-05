@@ -306,21 +306,25 @@
     "headingTitle": "Nos astuces pour prendre soin de votre mobile",
     "children": [
       {
-        "img": "",
+        "img": "/img/tipsImg1.webp",
         "title": "Comment prolonger la vie de son smartphone ?",
         "cta": "Visiter WeFix"
       },
       {
-        "img": "",
+        "img": "/img/tipsImg2.webp",
         "title": "Comment protéger son smartphone de l’oxydation ?",
         "cta": "Visiter WeFix"
       },
       {
-        "img": "",
+        "img": "/img/tipsImg3.webp",
         "title": "Les conseils à suivre avant d’envoyer votre téléphone en réparation",
         "cta": "Visiter WeFix"
       }
     ]
+  },
+  "rememberSection": {
+    "title": "À retenir",
+    "img": "/img/rememberImg.webp"
   },
   "lastSection": {
     "breadCrumbs": [

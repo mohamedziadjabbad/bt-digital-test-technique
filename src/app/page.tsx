@@ -11,6 +11,10 @@ import {
   InsuranceSection,
   RepairPhoneSection,
   LifeSpanSection,
+  FaqSection,
+  TipSection,
+  LegalSection,
+  RememberSection,
 } from "@/components/sections";
 import {
   Columns,
@@ -40,6 +44,10 @@ export default function Page() {
       <InsuranceSection />
       <RepairPhoneSection />
       <LifeSpanSection />
+      <FaqSection />
+      <RememberSection />
+      <TipSection />
+      <LegalSection />
     </main>
   );
 }
