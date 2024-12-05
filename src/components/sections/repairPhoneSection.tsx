@@ -22,8 +22,8 @@ import { useMobile } from "@/hooks/useMobile";
 import CustomCard from "../customCard";
 import OutlinedBox from "../outlinedBox";
 
-export default function RepairServiceSection() {
-  const { repairServiceSection } = useData();
+export default function RepairPhoneSection() {
+  const { repairPhoneSection } = useData();
   const isMobile = useMobile();
   return (
     <Section backgroundColor="MAIN">
@@ -32,37 +32,33 @@ export default function RepairServiceSection() {
           {/* i didn't find this icon in trilogy icons */}
           <Image
             align="ALIGNED_CENTER"
-            src={repairServiceSection.header.iconImg}
+            src={repairPhoneSection.header.iconImg}
             alt="repair-icon"
           />
 
           <Title level={3} typo={["has-text-white", "has-text-centered"]}>
-            {repairServiceSection.header.title}
+            {repairPhoneSection.header.title}
           </Title>
 
           {/* i didn't find the variant for the recommended color */}
-          <Button type="button" variant={ButtonVariant.SECONDARY}>
-            {repairServiceSection.header.cta}
-          </Button>
+          <Title level={3} typo={["has-text-white", "has-text-centered"]}>
+            {repairPhoneSection.subHeading}
+          </Title>
 
           {/* i didn't find similar component for this item in trilogy design system */}
           <OutlinedBox
-            title={repairServiceSection.benfits.title}
+            title={repairPhoneSection.moreInfo.title}
             titleProps={{
               level: 1,
               typo: ["has-text-white", "has-text-centered"],
               overline: true,
             }}
           >
-            {!isMobile && (
-              <DesktopRepairServiceWrapper
-                data={repairServiceSection.benfits}
-              />
-            )}
+            <DesktopRepairServiceWrapper data={repairPhoneSection.moreInfo} />
           </OutlinedBox>
 
           <Text typo={["has-text-white", "has-text-centered"]} level={4}>
-            {repairServiceSection.notion}
+            {repairPhoneSection.moreInfo.notion}
           </Text>
         </Rows>
       </Container>
@@ -73,17 +69,23 @@ export default function RepairServiceSection() {
 const DesktopRepairServiceWrapper = ({
   data,
 }: {
-  data: Data["repairServiceSection"]["benfits"];
+  data: Data["repairPhoneSection"]["moreInfo"];
 }) => {
   return (
-    <Columns>
+    <Columns align="ALIGNED_CENTER">
       {data.children.map((element, index) => (
         <Column
           key={`repair-service-${index}`}
           align="ALIGNED_CENTER"
-          desktopSize={3}
+          desktopSize={5}
+          mobileSize={12}
         >
-          <CustomCard backgroundColor="MAIN" shadowless item={element} />
+          <CustomCard
+            fullheight
+            backgroundColor="MAIN"
+            shadowless
+            item={element}
+          />
         </Column>
       ))}
     </Columns>

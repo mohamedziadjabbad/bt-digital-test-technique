@@ -201,7 +201,7 @@
   },
   "repairPhoneSection": {
     "header": {
-      "iconImg": "",
+      "iconImg": "/img/solutionSmartphoneDurableIcon.webp",
       "title": "Réparer son téléphone, c'est aussi un gestepour l’environnement"
     },
     "subHeading": "Prolonger la durée de vie d’un an d’un téléphone permettrait de réduire son empreinte carbone de 30% environ*",
@@ -211,7 +211,7 @@
         {
           "icon": "tri-mobile-up-down",
           "title": "Environnement",
-          "desctiption": [
+          "description": [
             {
               "text": "En évitant la production d’un nouveau mobile et ses conséquences sur l’environnement.",
               "weight": "light",
@@ -222,7 +222,7 @@
         {
           "icon": "tri-recycle",
           "title": "Recyclage",
-          "desctiption": [
+          "description": [
             {
               "text": "En permettant le ",
               "weight": "light",
