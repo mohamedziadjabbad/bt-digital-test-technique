@@ -3,7 +3,7 @@
     "img": "/img/heroImage.webp",
     "title": "Réparation de votre téléphone",
     "description": "Un smartphone cassé ou en panne, ça arrive à tout le monde.",
-    "subDesctiption": [
+    "subDescription": [
       {
         "text": "Heureusement, que vous soyez sous garantie ou non, on a des ",
         "weight": "light",
@@ -170,8 +170,8 @@
           },
           {
             "text": " sa réparation est prise en charge gratuitement ",
-            "weight": "light",
-            "type": "p"
+            "weight": "semibold",
+            "type": "span"
           },
           {
             "text": "par Bouygues Telecom.",

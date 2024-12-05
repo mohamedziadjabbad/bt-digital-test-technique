@@ -2,7 +2,7 @@ import React, { ReactElement } from "react";
 
 import { Link, Text, TextMarkup } from "@trilogy-ds/react";
 
-type DynamicTextParams = {
+export type DynamicTextParams = {
   text: string;
   weight: string;
   type: string;
@@ -13,7 +13,7 @@ type DynamicTextProps = {
   markup?: "span" | "p" | TextMarkup;
 };
 
-export default function DynamicText({ item }: DynamicTextProps) {
+const DynamicText = ({ item }: DynamicTextProps) => {
   const type = item.type as DynamicTextProps["markup"];
 
   const componentType: { [key: string]: string | ReactElement } = {
@@ -30,4 +30,14 @@ export default function DynamicText({ item }: DynamicTextProps) {
   };
 
   return componentType[item.type];
+};
+
+export default function DynamicTextWrapper({
+  data,
+}: {
+  data: DynamicTextParams[];
+}) {
+  return data.map((element: DynamicTextParams, index: number) => (
+    <DynamicText key={`description-child-${index}`} item={element} />
+  ));
 }

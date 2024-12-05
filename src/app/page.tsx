@@ -7,6 +7,7 @@ import {
   RepairSectionSection,
   AdvantageSection,
   PlanSection,
+  SolutionSection,
 } from "@/components/sections";
 import {
   Columns,
@@ -32,6 +33,7 @@ export default function Page() {
       <RepairSectionSection />
       <AdvantageSection />
       <PlanSection />
+      <SolutionSection />
     </main>
   );
 }

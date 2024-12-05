@@ -4,6 +4,7 @@ import PartnerSection from "@/components/sections/partnerSection";
 import RepairSectionSection from "@/components/sections/repairServiceSection";
 import AdvantageSection from "@/components/sections/advantageSection";
 import PlanSection from "@/components/sections/planSection";
+import SolutionSection from "@/components/sections/solutionSection";
 
 export {
   HeroSection,
@@ -12,4 +13,5 @@ export {
   RepairSectionSection,
   AdvantageSection,
   PlanSection,
+  SolutionSection,
 };

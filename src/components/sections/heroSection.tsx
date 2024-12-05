@@ -16,7 +16,7 @@ import {
 import { useData } from "@/data/data";
 
 // components
-import DynamicText from "@/components/dynamicText";
+import DynamicTextWrapper from "@/components/dynamicText";
 import { useMobile } from "@/hooks/useMobile";
 
 export default function HeroSection() {
@@ -42,12 +42,7 @@ export default function HeroSection() {
             <Text
               typo={[isMobile ? "has-text-centered" : "", "has-text-white"]}
             >
-              {heroSection.subDesctiption.map((element, index) => (
-                <DynamicText
-                  key={`description-child-${index}`}
-                  item={element}
-                />
-              ))}
+              <DynamicTextWrapper data={heroSection.subDescription} />
             </Text>
           </Column>
           <Column desktopSize={6} mobileSize={12}>
