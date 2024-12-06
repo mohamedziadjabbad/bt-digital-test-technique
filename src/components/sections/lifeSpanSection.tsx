@@ -33,6 +33,7 @@ export default function LifeSpanSection() {
                   alt="life-span"
                   height={132.01}
                   width={263}
+                  align="ALIGNED_CENTER"
                 />
               </Column>
               <Column desktopSize={6} mobileSize={12}>

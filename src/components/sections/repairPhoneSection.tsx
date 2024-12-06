@@ -29,17 +29,18 @@ export default function RepairPhoneSection() {
     <Section backgroundColor="MAIN">
       <Container>
         <Rows gap={GapSize.SEVEN}>
-          {/* i didn't find this icon in trilogy icons */}
-          <Image
-            align="ALIGNED_CENTER"
-            src={repairPhoneSection.header.iconImg}
-            alt="repair-icon"
-          />
+          <Rows gap={GapSize.SEVEN}>
+            {/* i didn't find this icon in trilogy icons */}
+            <Image
+              align="ALIGNED_CENTER"
+              src={repairPhoneSection.header.iconImg}
+              alt="repair-icon"
+            />
 
-          <Title level={2} typo={["has-text-white", "has-text-centered"]}>
-            {repairPhoneSection.header.title}
-          </Title>
-
+            <Title level={3} typo={["has-text-white", "has-text-centered"]}>
+              {repairPhoneSection.header.title}
+            </Title>
+          </Rows>
           {/* i didn't find the variant for the recommended color */}
           <Title level={4} typo={["has-text-white", "has-text-centered"]}>
             {repairPhoneSection.subHeading}
@@ -49,9 +50,8 @@ export default function RepairPhoneSection() {
           <OutlinedBox
             title={repairPhoneSection.moreInfo.title}
             titleProps={{
-              level: 1,
-              typo: ["has-text-white", "has-text-centered"],
-              overline: true,
+              level: 4,
+              typo: ["has-text-white"],
             }}
           >
             <DesktopRepairServiceWrapper data={repairPhoneSection.moreInfo} />

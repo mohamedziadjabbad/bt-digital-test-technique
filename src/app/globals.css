@@ -47,12 +47,14 @@ a {
 
 .outlined-box_title {
   position: absolute;
-  top: -10px;
+  top: 0px;
   left: 50%;
-  transform: translateX(-50%);
-  padding: 0 16px;
+  transform: translate(-50%, -50%);
   background-color: #25465f;
   z-index: 10;
+  padding: 0 16px;
+
+  text-align: center;
 }
 
 .outlined-box_content {
@@ -66,8 +68,6 @@ a {
 
   .outlined-box_title {
     padding: 0 12px;
-    top: -10px;
-    left: 50%;
   }
 
   .outlined-box_content {

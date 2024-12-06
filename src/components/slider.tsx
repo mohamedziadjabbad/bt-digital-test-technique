@@ -6,6 +6,7 @@ import { Swiper } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 
+// didn't found slider in trilogy
 export default function Slider({
   children,
   id,

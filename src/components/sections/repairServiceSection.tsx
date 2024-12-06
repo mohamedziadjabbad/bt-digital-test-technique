@@ -31,31 +31,32 @@ export default function RepairServiceSection() {
     <Section backgroundColor="MAIN">
       <Container>
         <Rows gap={GapSize.SEVEN}>
-          {/* i didn't find this icon in trilogy icons */}
-          <Image
-            align="ALIGNED_CENTER"
-            src={repairServiceSection.header.iconImg}
-            alt="repair-icon"
-          />
+          <Rows gap={GapSize.THREE}>
+            {/* i didn't find this icon in trilogy icons */}
+            <Image
+              align="ALIGNED_CENTER"
+              src={repairServiceSection.header.iconImg}
+              alt="repair-icon"
+            />
 
-          <Title level={3} typo={["has-text-white", "has-text-centered"]}>
-            {repairServiceSection.header.title}
-          </Title>
+            <Title level={3} typo={["has-text-white", "has-text-centered"]}>
+              {repairServiceSection.header.title}
+            </Title>
 
-          {/* i didn't find the variant for the recommended color */}
-          <View flexable className="is-justified-center">
-            <Button className="has-background-info" type="button">
-              {repairServiceSection.header.cta}
-            </Button>
-          </View>
+            {/* i didn't find the variant for the recommended color */}
+            <View flexable className="is-justified-center">
+              <Button className="has-background-info" type="button">
+                {repairServiceSection.header.cta}
+              </Button>
+            </View>
+          </Rows>
 
           {/* i didn't find similar component for this item in trilogy design system */}
           <OutlinedBox
             title={repairServiceSection.benfits.title}
             titleProps={{
-              level: 1,
-              typo: ["has-text-white", "has-text-centered"],
-              overline: true,
+              level: 4,
+              typo: ["has-text-white"],
             }}
           >
             <Columns>
