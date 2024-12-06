@@ -1,11 +1,11 @@
-import { useEffect, useState } from "react";
+import { useEffect, useLayoutEffect, useState } from "react";
 
 const MAX_MOBILE_SIZE = 600;
 
 export const useMobile = () => {
   const [isMobile, setIsMobile] = useState<boolean>(false);
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     const handleSize = () => {
       setIsMobile(window.innerWidth <= MAX_MOBILE_SIZE);
     };

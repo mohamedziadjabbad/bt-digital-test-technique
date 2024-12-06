@@ -29,11 +29,15 @@ export default function PartnerSection() {
               <Image src={partnerSection.img} alt="partner-image" />
             </Column>
             <Column desktopSize={6} mobileSize={12}>
-              <Text typo={["has-text-weight-semibold"]}>
-                {partnerSection.title}
-              </Text>
-              <Text typo={["has-text-main"]}>{partnerSection.description}</Text>
-              <Link blank>{partnerSection.cta}</Link>
+              <Rows gap={GapSize.FOUR}>
+                <Text typo={["has-text-weight-semibold"]}>
+                  {partnerSection.title}
+                </Text>
+                <Text typo={["has-text-main"]}>
+                  {partnerSection.description}
+                </Text>
+                <Link className="has-text-info">{partnerSection.cta}</Link>
+              </Rows>
             </Column>
           </Columns>
         </Rows>

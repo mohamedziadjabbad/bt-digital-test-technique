@@ -9,6 +9,7 @@ import {
   IconColor,
   Button,
   Icon,
+  View,
 } from "@trilogy-ds/react";
 import React from "react";
 
@@ -30,21 +31,25 @@ export default function PlanComponent({
   return (
     <Box {...props}>
       <BoxContent>
-        {icons.map((element, index) => (
-          <Icon
-            key={`icon-${index}`}
-            color={IconColor.MAIN}
-            size="large"
-            name={element}
-          />
-        ))}
+        <View flexable className="is-justified-center">
+          {icons.map((element, index) => (
+            <Icon
+              key={`icon-${index}`}
+              color={IconColor.MAIN}
+              size="large"
+              name={element}
+            />
+          ))}
+        </View>
         <Title typo={["has-text-centered"]} level={3}>
           {item.title}
         </Title>
         <Text typo={["has-text-centered"]}>{item.description}</Text>
       </BoxContent>
       <BoxFooter>
-        <Button variant="CONVERSION">{item?.cta}</Button>
+        <View flexable className="is-justified-center">
+          <Button variant="CONVERSION">{item?.cta}</Button>
+        </View>
       </BoxFooter>
     </Box>
   );

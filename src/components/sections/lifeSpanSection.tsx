@@ -43,7 +43,9 @@ export default function LifeSpanSection() {
                       data={lifeSpanSection.body.description}
                     />
                   </Text>
-                  <Link>{lifeSpanSection.body.cta}</Link>
+                  <Link className="has-text-info">
+                    {lifeSpanSection.body.cta}
+                  </Link>
                 </Rows>
               </Column>
             </Columns>

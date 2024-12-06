@@ -10,6 +10,7 @@ import {
   Rows,
   Section,
   Title,
+  View,
 } from "@trilogy-ds/react";
 import React from "react";
 import CustomCard from "../customCard";
@@ -46,9 +47,11 @@ export default function InsuranceSection() {
               </Rows>
             </Column>
           </Columns>
-          <Button type="button" variant="PRIMARY">
-            {insuranceSection.cta}
-          </Button>
+          <View flexable className="is-justified-center">
+            <Button className="has-background-info">
+              {insuranceSection.cta}
+            </Button>
+          </View>
         </Rows>
       </Container>
     </Section>

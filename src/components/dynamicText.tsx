@@ -1,6 +1,6 @@
 import React, { ReactElement } from "react";
 
-import { Link, Text, TextMarkup } from "@trilogy-ds/react";
+import { Link, Text, TextMarkup, TextVariantProps } from "@trilogy-ds/react";
 
 export type DynamicTextParams = {
   text: string;
@@ -10,11 +10,13 @@ export type DynamicTextParams = {
 
 type DynamicTextProps = {
   item: DynamicTextParams;
-  markup?: "span" | "p" | TextMarkup;
+  linkColor?: string;
 };
 
-const DynamicText = ({ item }: DynamicTextProps) => {
-  const type = item.type as DynamicTextProps["markup"];
+type Markup = "span" | "p" | TextMarkup;
+
+const DynamicText = ({ item, linkColor }: DynamicTextProps) => {
+  const type = item.type as Markup;
 
   const componentType: { [key: string]: string | ReactElement } = {
     p: item.text,
@@ -26,7 +28,7 @@ const DynamicText = ({ item }: DynamicTextProps) => {
       ) : (
         <Text markup={type}>{item.text}</Text>
       ),
-    a: <Link>{item.text}</Link>,
+    a: <Link className={linkColor}>{item.text}</Link>,
   };
 
   return componentType[item.type];
@@ -34,10 +36,16 @@ const DynamicText = ({ item }: DynamicTextProps) => {
 
 export default function DynamicTextWrapper({
   data,
+  linkColor = "has-text-info",
 }: {
   data: DynamicTextParams[];
+  linkColor?: string;
 }) {
   return data.map((element: DynamicTextParams, index: number) => (
-    <DynamicText key={`description-child-${index}`} item={element} />
+    <DynamicText
+      linkColor={linkColor}
+      key={`description-child-${index}`}
+      item={element}
+    />
   ));
 }

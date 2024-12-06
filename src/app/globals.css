@@ -66,7 +66,8 @@ a {
 
   .outlined-box_title {
     padding: 0 12px;
-    top: -12px;
+    top: -10px;
+    left: 50%;
   }
 
   .outlined-box_content {
@@ -74,6 +75,27 @@ a {
   }
 }
 /* outlined box end */
+
+/* swiper slider start */
+
+.swiper-pagination {
+  bottom: 0px !important;
+}
+
+/* Inactive bullets */
+.swiper-pagination-bullet {
+  background-color: #d1d1d1 !important; /* Inactive color */
+  opacity: 0.6;
+  transition: background-color 0.3s, opacity 0.3s;
+}
+
+/* Active bullet */
+.swiper-pagination-bullet-active {
+  background-color: #0c7b91 !important; /* Active color */
+  opacity: 1;
+}
+
+/* swiper slider end */
 
 @media (prefers-color-scheme: dark) {
   html {

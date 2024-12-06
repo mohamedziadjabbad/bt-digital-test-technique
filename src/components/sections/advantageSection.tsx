@@ -29,9 +29,12 @@ export default function AdvantageSection() {
                     fullheight
                     shadowless={false}
                     isBackgroundWhite
-                    backgroundColor="WHITE"
+                    backgroundColor={
+                      advantageSection.children.length - 1 == index
+                        ? "MAIN_FADE"
+                        : "WHITE"
+                    }
                     item={element}
-                    active={advantageSection.children.length - 1 == index}
                   />
                 </Column>
               ))}

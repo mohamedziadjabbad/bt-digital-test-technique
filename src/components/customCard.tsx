@@ -10,6 +10,8 @@ import {
   BoxProps,
   IconColorValues,
   Link,
+  View,
+  Alignable,
 } from "@trilogy-ds/react";
 import React from "react";
 import DynamicTextWrapper, { DynamicTextParams } from "./dynamicText";
@@ -27,12 +29,14 @@ type CustomCardProps = {
   textAlign?: "left" | "center";
   isBackgroundWhite?: boolean;
   hideParamsOnMobile?: string[];
+  linkColor?: string;
 };
 
 export default function CustomCard({
   item,
   iconColor = IconColor.SUCCESS,
   isBackgroundWhite = false,
+  linkColor,
   textAlign = "center",
   hideParamsOnMobile,
   ...props
@@ -58,7 +62,13 @@ export default function CustomCard({
   return (
     <Box {...props}>
       <BoxContent>
-        <Icon color={iconColor} size="large" name={iconName} />
+        {/* when i use justify center i get in the inpect element that it takes justified start as a class name */}
+        <View
+          flexable
+          className={textAlign == "center" ? "is-justified-center" : ""}
+        >
+          <Icon color={iconColor} size="large" name={iconName} />
+        </View>
         <Title
           typo={[
             !isBackgroundWhite ? "has-text-white" : "",
@@ -85,7 +95,10 @@ export default function CustomCard({
               textAlign == "center" ? "has-text-centered" : "",
             ]}
           >
-            <DynamicTextWrapper data={item?.description} />
+            <DynamicTextWrapper
+              linkColor={linkColor}
+              data={item?.description}
+            />
           </Text>
         )}
         {item?.notion && hideUndesiredElements("notion") ? (
@@ -95,7 +108,7 @@ export default function CustomCard({
         ) : null}
         {/* can't add color to the link tag */}
         {item?.cta && hideUndesiredElements("cta") ? (
-          <Link blank>{item?.cta}</Link>
+          <Link className="has-text-info">{item?.cta}</Link>
         ) : null}
       </BoxContent>
     </Box>

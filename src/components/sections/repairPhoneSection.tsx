@@ -81,6 +81,7 @@ const DesktopRepairServiceWrapper = ({
           mobileSize={12}
         >
           <CustomCard
+            linkColor="has-text-white"
             fullheight
             backgroundColor="MAIN"
             shadowless

@@ -3,24 +3,26 @@ import React from "react";
 // design system
 import {
   Button,
-  ButtonVariant,
   Column,
   Columns,
   Container,
   GapSize,
   Image,
-  Row,
   Rows,
   Section,
   Text,
   Title,
+  View,
 } from "@trilogy-ds/react";
 
-// hooks
 import { Data, useData } from "@/data/data";
 import { useMobile } from "@/hooks/useMobile";
+
+// components
 import CustomCard from "../customCard";
 import OutlinedBox from "../outlinedBox";
+import Slider from "../slider";
+import { SwiperSlide } from "swiper/react";
 
 export default function RepairServiceSection() {
   const { repairServiceSection } = useData();
@@ -41,9 +43,11 @@ export default function RepairServiceSection() {
           </Title>
 
           {/* i didn't find the variant for the recommended color */}
-          <Button type="button" variant={ButtonVariant.SECONDARY}>
-            {repairServiceSection.header.cta}
-          </Button>
+          <View flexable className="is-justified-center">
+            <Button className="has-background-info" type="button">
+              {repairServiceSection.header.cta}
+            </Button>
+          </View>
 
           {/* i didn't find similar component for this item in trilogy design system */}
           <OutlinedBox
@@ -54,11 +58,18 @@ export default function RepairServiceSection() {
               overline: true,
             }}
           >
-            {!isMobile && (
-              <DesktopRepairServiceWrapper
-                data={repairServiceSection.benfits}
-              />
-            )}
+            <Columns>
+              {/* i used slider because i couldn't find slider inside of trilogy */}
+              {!isMobile ? (
+                <DesktopRepairServiceWrapper
+                  data={repairServiceSection.benfits}
+                />
+              ) : (
+                <MobileRepairServiceWrapper
+                  data={repairServiceSection.benfits}
+                />
+              )}
+            </Columns>
           </OutlinedBox>
 
           <Text typo={["has-text-white", "has-text-centered"]} level={4}>
@@ -75,17 +86,27 @@ const DesktopRepairServiceWrapper = ({
 }: {
   data: Data["repairServiceSection"]["benfits"];
 }) => {
+  return data.children.map((element, index) => (
+    <Column key={`repair-service-${index}`} align="ALIGNED_CENTER" size={3}>
+      <CustomCard backgroundColor="MAIN" shadowless item={element} />
+    </Column>
+  ));
+};
+
+const MobileRepairServiceWrapper = ({
+  data,
+}: {
+  data: Data["repairServiceSection"]["benfits"];
+}) => {
   return (
-    <Columns>
+    <Slider id={1}>
       {data.children.map((element, index) => (
-        <Column
-          key={`repair-service-${index}`}
-          align="ALIGNED_CENTER"
-          desktopSize={3}
-        >
-          <CustomCard backgroundColor="MAIN" shadowless item={element} />
-        </Column>
+        <SwiperSlide key={`repair-service-${index}`}>
+          <Column align="ALIGNED_CENTER" size={12}>
+            <CustomCard backgroundColor="MAIN" shadowless item={element} />
+          </Column>
+        </SwiperSlide>
       ))}
-    </Columns>
+    </Slider>
   );
 };
